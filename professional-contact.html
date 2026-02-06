@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Apex Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="language-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="gr">ΕΛ</button>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">A</div>
+                <span>Apex Consulting</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="professional-index.html" data-en="Home" data-gr="Αρχική">Home</a></li>
+                <li><a href="professional-services.html" data-en="Services" data-gr="Υπηρεσίες">Services</a></li>
+                <li><a href="professional-about.html" data-en="About" data-gr="Σχετικά">About</a></li>
+                <li><a href="professional-contact.html" class="active" data-en="Contact" data-gr="Επικοινωνία">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 data-en="Get in Touch" data-gr="Επικοινωνήστε">Get in Touch</h1>
+            <p data-en="Schedule your free consultation today" data-gr="Κλείστε τη δωρεάν συνάντησή σας σήμερα">
+                Schedule your free consultation today
+            </p>
+        </div>
+    </section>
+
+    <section class="contact-page-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 data-en="Contact Information" data-gr="Στοιχεία Επικοινωνίας">Contact Information</h2>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3 data-en="Office Address" data-gr="Διεύθυνση Γραφείου">Office Address</h3>
+                            <p>45 Syntagma Square<br>Athens 10563, Greece</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3 data-en="Phone" data-gr="Τηλέφωνο">Phone</h3>
+                            <p>+30 210 987 6543</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@apexconsulting.gr</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3 data-en="Business Hours" data-gr="Ώρες Λειτουργίας">Business Hours</h3>
+                            <p><strong data-en="Mon-Fri:" data-gr="Δευ-Παρ:">Mon-Fri:</strong> 9:00 - 18:00<br>
+                            <strong data-en="Sat-Sun:" data-gr="Σαβ-Κυρ:">Sat-Sun:</strong> <span data-en="Closed" data-gr="Κλειστά">Closed</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-area">
+                    <h2 data-en="Request Consultation" data-gr="Αίτημα Συνάντησης">Request Consultation</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-en="Full Name *" data-gr="Ονοματεπώνυμο *">Full Name *</label>
+                            <input type="text" id="name" name="name" required data-en="John Doe" data-gr="Γιάννης Παπαδόπουλος">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@company.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" data-en="Phone *" data-gr="Τηλέφωνο *">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+30 210 123 4567">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company" data-en="Company" data-gr="Εταιρεία">Company</label>
+                            <input type="text" id="company" name="company" data-en="Your Company" data-gr="Η Εταιρεία Σας">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service" data-en="Service of Interest" data-gr="Υπηρεσία Ενδιαφέροντος">Service of Interest</label>
+                            <select id="service" name="service">
+                                <option value="" data-en="Select a service..." data-gr="Επιλέξτε υπηρεσία...">Select a service...</option>
+                                <option value="strategy" data-en="Business Strategy" data-gr="Επιχειρηματική Στρατηγική">Business Strategy</option>
+                                <option value="org-dev" data-en="Organizational Development" data-gr="Οργανωσιακή Ανάπτυξη">Organizational Development</option>
+                                <option value="financial" data-en="Financial Advisory" data-gr="Χρηματοοικονομικές Συμβουλές">Financial Advisory</option>
+                                <option value="digital" data-en="Digital Transformation" data-gr="Ψηφιακός Μετασχηματισμός">Digital Transformation</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="message" data-en="Message *" data-gr="Μήνυμα *">Message *</label>
+                            <textarea id="message" name="message" rows="5" required data-en="Tell us about your business needs..." data-gr="Πείτε μας για τις επιχειρηματικές σας ανάγκες..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <span data-en="Send Request" data-gr="Αποστολή Αιτήματος">Send Request</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">A</div>
+                        <span>Apex Consulting</span>
+                    </div>
+                    <p data-en="Empowering businesses to reach their apex through strategic excellence." data-gr="Ενδυναμώνοντας επιχειρήσεις να φτάσουν στην κορυφή τους.">
+                        Empowering businesses to reach their apex through strategic excellence.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Quick Links" data-gr="Σύνδεσμοι">Quick Links</h3>
+                    <ul>
+                        <li><a href="professional-services.html" data-en="Services" data-gr="Υπηρεσίες">Services</a></li>
+                        <li><a href="professional-about.html" data-en="About" data-gr="Σχετικά">About</a></li>
+                        <li><a href="professional-contact.html" data-en="Contact" data-gr="Επικοινωνία">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Contact" data-gr="Επικοινωνία">Contact</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone"></i> <span>+30 210 987 6543</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>info@apexconsulting.gr</span></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Follow Us" data-gr="Ακολουθήστε μας">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Apex Consulting. <span data-en="All rights reserved." data-gr="Όλα τα δικαιώματα διατηρούνται.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
