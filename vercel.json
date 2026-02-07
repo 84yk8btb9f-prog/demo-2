@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/professional-index.html" },
+    { "source": "/services", "destination": "/professional-sercices.html" },
+    { "source": "/about", "destination": "/professional-about.html" },
+    { "source": "/connect", "destination": "/professional-connect.html" }
+  ]
+}
